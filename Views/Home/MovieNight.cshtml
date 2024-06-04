@@ -1,0 +1,42 @@
+﻿@model List<MovieModel>
+<div class="container-fluid bg-white bg-opacity-75">
+    <form asp-method="post" asp-action="MovieNight">
+        <label for="Title">Enter the 1st Title: </label>
+        <input type="text" name="t1" id="Title" />
+
+        <label for="Title">Enter the 2nd Title: </label>
+        <input type="text" name="t2" id="Title" />
+
+        <label for="Title">Enter the 3rd Title: </label>
+        <input type="text" name="t3" id="Title" />
+
+        <input type="submit" />
+
+    </form>
+    <div>
+        <div class="container">
+            <div class="row" data-masonry='{"percentPosition": true}'>
+        @{
+            if (Model != null)
+            {
+
+                foreach (MovieModel m in Model)
+                {
+                     <div class="col-md-4 mb-4">
+                        <div class="card rounded">
+                            <img class="card-img-top img-thumbnail" src="@m.Poster" style="height: 400px; object-fit: contain;" />
+                        <div class="card-body">
+                            <h4 class="card-title">@m.Title</h4>
+                            <p class="card-text">@m.Genre, @m.Year, @m.imdbRating</p>
+                            <p>@m.Plot</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                }
+            }
+        }
+        </div>
+        </div>

@@ -1,0 +1,37 @@
+﻿@model SearchModel
+<div class="container-fluid bg-white bg-opacity-75">
+    <form asp-method="post" asp-action="MovieSearch">
+        <div class="mb-3">
+            <label for="Title" class="form-label">Enter a Movie Title: </label>
+            <input type="text" name="Title" id="Title" />
+
+            <input class="sheer-btn " type="submit" />
+        </div>
+    </form>
+</div>
+
+<div class="container">
+    <div class="row" data-masonry='{"percentPosition": true}'>
+        @{
+            if (Model != null && Model.Search != null)
+            {
+
+                foreach (Search s in Model.Search)
+                {
+                    <div class="col-md-4 mb-4">
+                        <div class="card rounded">
+                            <img src="@s.Poster" class="card-img-top img-thumbnail" style="height: 400px; object-fit: contain;" />
+                            <h3 name="Title" class="card-title">@s.Title</h3>
+                            <form asp-method="post" style="display: flex; justify-content: center;">
+                                <input type="hidden" name="Title" value="@s.Title" />
+                                <button asp-action="MovieDetails" class="sheer-btn" type="submit">See Movie Details</button>
+                            </form>
+                        </div>
+                    </div>
+                }
+
+            }
+        }
+    </div>
+
+</div>

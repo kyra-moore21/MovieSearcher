@@ -1,0 +1,10 @@
+﻿@model MovieModel
+<div class="card" style="max-width: 400px; margin: auto;">
+<img class="card-img-top" src="@Model.Poster" />
+<div class="card-body">
+    <h2 class="card-title">@Model.Title</h2>
+    <p class="card-text">@Model.Genre, @Model.Year, @Model.imdbRating</p>
+    <p>Summary: @Model.Plot</p>
+
+    </div>
+</div>
