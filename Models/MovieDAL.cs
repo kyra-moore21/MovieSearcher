@@ -9,7 +9,7 @@ namespace SearchingOMDB.Models
         {
             //adjust
             //setup
-            string url = $"http://www.omdbapi.com/?apikey=24d76b3f&t={title}";
+            string url = $"http://www.omdbapi.com/?apikey={Secret.apiKey}&t={title}";
 
             //request
             HttpWebRequest request = WebRequest.CreateHttp(url);
@@ -30,7 +30,7 @@ namespace SearchingOMDB.Models
         {
             //adjust
             //setup
-            string url = $"http://www.omdbapi.com/?apikey=24d76b3f&s={title}";
+            string url = $"http://www.omdbapi.com/?apikey={Secret.apiKey}&s={title}";
 
             //request
             HttpWebRequest request = WebRequest.CreateHttp(url);

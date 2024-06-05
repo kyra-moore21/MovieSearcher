@@ -31,3 +31,4 @@ C:\Users\kyram\source\repos\SearchingOMDB\SearchingOMDB\obj\Debug\net8.0\refint\
 C:\Users\kyram\source\repos\SearchingOMDB\SearchingOMDB\obj\Debug\net8.0\SearchingOMDB.pdb
 C:\Users\kyram\source\repos\SearchingOMDB\SearchingOMDB\obj\Debug\net8.0\SearchingOMDB.genruntimeconfig.cache
 C:\Users\kyram\source\repos\SearchingOMDB\SearchingOMDB\obj\Debug\net8.0\ref\SearchingOMDB.dll
+C:\Users\kyram\source\repos\SearchingOMDB\SearchingOMDB\obj\Debug\net8.0\SearchingOMDB.sourcelink.json

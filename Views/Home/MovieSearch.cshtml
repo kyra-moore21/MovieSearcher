@@ -5,7 +5,8 @@
             <label for="Title" class="form-label">Enter a Movie Title: </label>
             <input type="text" name="Title" id="Title" />
 
-            <input class="sheer-btn " type="submit" />
+            <button type="submit" class="form-btn">Submit</button>
+
         </div>
     </form>
 </div>
@@ -24,7 +25,7 @@
                             <h3 name="Title" class="card-title">@s.Title</h3>
                             <form asp-method="post" style="display: flex; justify-content: center;">
                                 <input type="hidden" name="Title" value="@s.Title" />
-                                <button asp-action="MovieDetails" class="sheer-btn" type="submit">See Movie Details</button>
+                                <button asp-action="MovieDetails" class="form-btn" type="submit">See Movie Details</button>
                             </form>
                         </div>
                     </div>

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SearchingOMDB")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3b490caf5f5d0717d616a54789113e5b4297f628")]
 [assembly: System.Reflection.AssemblyProductAttribute("SearchingOMDB")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SearchingOMDB")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
